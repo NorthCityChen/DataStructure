@@ -1,10 +1,11 @@
 /*
  * @Author: Mr.Sen
- * @LastEditTime: 2020-10-20 09:17:48
+ * @LastEditTime: 2020-10-20 20:12:15
+ * @Description: 
  * @Website: https://grimoire.cn
- * @Description: 栈【单链表实现】
- * @symbol_custom_string_obkoro1: Copyright 2020 Mr.Sen All rights reserved.
+ * @Copyright: 2020 Mr.Sen All rights reserved.
  */
+
 #include <bits/stdc++.h>
 using namespace std;
 

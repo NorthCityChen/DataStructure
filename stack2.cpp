@@ -1,9 +1,9 @@
 /*
  * @Author: Mr.Sen
- * @LastEditTime: 2020-10-20 09:40:31
+ * @LastEditTime: 2020-10-20 20:05:15
+ * @Description: 
  * @Website: https://grimoire.cn
- * @Description: 栈【数组实现】
- * @symbol_custom_string_obkoro1: Copyright 2020 Mr.Sen All rights reserved.
+ * @Copyright: 2020 Mr.Sen All rights reserved.
  */
 
 #include <bits/stdc++.h>
