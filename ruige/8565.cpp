@@ -1,6 +1,6 @@
 /*
  * @Author: Mr.Sen
- * @LastEditTime: 2020-10-22 16:47:08
+ * @LastEditTime: 2020-10-22 16:47:28
  * @Description: 队列【循环队列实现】
  * @Website: https://grimoire.cn
  * @Copyright: 2020 Mr.Sen All rights reserved
@@ -67,13 +67,17 @@ int back(queueNode s)
 int main()
 {
     queueNode s= creatQueue();
-    push(s, 10);
-    push(s, 12);
-    cout << size(s) << endl;
-    cout << back(s) << endl;
-    pop(s);
-    cout << back(s) << endl;
-    pop(s);
+    int x;
+    while (cin >> x && x != 0)
+    {
+        push(s, x);
+    }
+    while (size(s))
+    {
+        cout << back(s) << " ";
+        pop(s);
+    }
+    cout << endl;
 
     return 0;
 }

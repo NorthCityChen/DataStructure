@@ -1,6 +1,6 @@
 /*
  * @Author: Mr.Sen
- * @LastEditTime: 2020-10-22 15:56:02
+ * @LastEditTime: 2020-10-22 18:19:41
  * @Description: 栈的模板类
  * @Website: https://grimoire.cn
  * @Copyright: 2020 Mr.Sen All rights reserved.
@@ -12,14 +12,12 @@ template <typename T>
 class StackNode
 {
 private:
-    //const int MAXSIZE = 1e3 + 10;
     int top;
     T *base;
 
 public:
     StackNode()
     {
-        // this->top=0;
         const int MAXSIZE = 1e3 + 10;
         this->base = new T[MAXSIZE];
         this->top = 0;
@@ -41,19 +39,50 @@ public:
         base[top] = value;
         top++;
     }
+
+    T front()
+    {
+        return base[top - 1];
+    }
 };
+
+int pro(char c)
+{
+    int vis[256];
+    memset(vis, 0, sizeof(vis));
+
+    vis['+'] = 4;
+    vis['-'] = 4;
+    vis['*'] = 3;
+    vis['/'] = 3;
+    vis['('] = 1;
+    vis[')'] = 1;
+    
+    return vis[c];
+}
+
+char math(string str)
+{
+    StackNode<char> s1;
+    StackNode<char> s2;
+
+    s2.push('#');
+    for (auto x:str)
+    {
+        if (x != '#' && pro(x) == 0)
+        {
+            s1.push(x);
+        }
+        else
+        {
+            int m = pro(s2.front()) - pro()
+        }
+        
+    }
+}
 
 int main()
 {
-    // cout << "Hello world" << endl;
-    StackNode<int> s;
-    s.push(12);
-    s.push(22);
-    // cout << s.back() << endl;
-    cout << s.pop() << endl;
-    cout << s.pop() << endl;
-    cout << s.pop() << endl;
-
-    // printf("%d\n", s.back());
+    
     return 0;
 }

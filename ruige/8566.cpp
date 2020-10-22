@@ -1,6 +1,6 @@
 /*
  * @Author: Mr.Sen
- * @LastEditTime: 2020-10-22 15:56:02
+ * @LastEditTime: 2020-10-22 15:55:47
  * @Description: 栈的模板类
  * @Website: https://grimoire.cn
  * @Copyright: 2020 Mr.Sen All rights reserved.
@@ -21,6 +21,7 @@ public:
     {
         // this->top=0;
         const int MAXSIZE = 1e3 + 10;
+        // this->base = (T *)calloc(MAXSIZE, sizeof(T));
         this->base = new T[MAXSIZE];
         this->top = 0;
     }
@@ -41,19 +42,45 @@ public:
         base[top] = value;
         top++;
     }
+    bool is_empty()
+    {
+        if (this->top == 0)
+            return true;
+        return false;
+    }
 };
+
+
+void exchange(int x, int n)
+{
+    StackNode<int> s;
+    int tmp = 0;
+    while (x)
+    {
+        // cout << "Hello world" << endl;
+        tmp = x % n;
+        s.push(tmp);
+        x /= n;
+    }
+    if (s.is_empty())
+    {
+        cout << "0" << endl;
+    }
+    while (!s.is_empty())
+    {
+        cout << s.pop();
+    }
+    cout << "(" << n << ")" <<endl;
+    return ;
+}
 
 int main()
 {
     // cout << "Hello world" << endl;
-    StackNode<int> s;
-    s.push(12);
-    s.push(22);
-    // cout << s.back() << endl;
-    cout << s.pop() << endl;
-    cout << s.pop() << endl;
-    cout << s.pop() << endl;
-
+    int x, n;
+    cin >> x >> n;
+    cout << x << "(10)=";
+    exchange(x, n);
     // printf("%d\n", s.back());
     return 0;
 }
