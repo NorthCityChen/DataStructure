@@ -1,7 +1,7 @@
 /*
  * @Author: Mr.Sen
- * @LastEditTime: 2020-10-22 18:28:10
- * @Description: 
+ * @LastEditTime: 2020-10-23 10:50:19
+ * @Description: 循环队列【模板类】
  * @Website: https://grimoire.cn
  * @Copyright: 2020 Mr.Sen All rights reserved.
  */

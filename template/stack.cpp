@@ -1,7 +1,7 @@
 /*
  * @Author: Mr.Sen
- * @LastEditTime: 2020-10-22 15:56:02
- * @Description: 栈的模板类
+ * @LastEditTime: 2020-10-23 10:50:32
+ * @Description: 栈【模板类】
  * @Website: https://grimoire.cn
  * @Copyright: 2020 Mr.Sen All rights reserved.
  */

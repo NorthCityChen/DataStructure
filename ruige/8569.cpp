@@ -1,7 +1,7 @@
 /*
  * @Author: Mr.Sen
- * @LastEditTime: 2020-10-22 18:19:41
- * @Description: 栈的模板类
+ * @LastEditTime: 2020-10-23 10:55:21
+ * @Description: 这题没写完呢！！！
  * @Website: https://grimoire.cn
  * @Copyright: 2020 Mr.Sen All rights reserved.
  */
@@ -75,7 +75,7 @@ char math(string str)
         }
         else
         {
-            int m = pro(s2.front()) - pro()
+            int m ;
         }
         
     }
@@ -83,6 +83,6 @@ char math(string str)
 
 int main()
 {
-    
+    cout << "Not Finished yet." << endl;
     return 0;
 }
