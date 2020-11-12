@@ -1,6 +1,6 @@
 /*
  * @Author: Mr.Sen
- * @LastEditTime: 2020-10-23 10:55:21
+ * @LastEditTime: 2020-10-23 18:36:06
  * @Description: 这题没写完呢！！！
  * @Website: https://grimoire.cn
  * @Copyright: 2020 Mr.Sen All rights reserved.
@@ -39,6 +39,7 @@ public:
         base[top] = value;
         top++;
     }
+  
 
     T front()
     {

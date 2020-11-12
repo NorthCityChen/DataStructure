@@ -1,6 +1,6 @@
 /*
  * @Author: Mr.Sen
- * @LastEditTime: 2020-10-20 20:05:15
+ * @LastEditTime: 2020-10-24 19:04:30
  * @Description: 
  * @Website: https://grimoire.cn
  * @Copyright: 2020 Mr.Sen All rights reserved.
@@ -25,6 +25,11 @@ int pop(stackNode &s)
 
 void push(stackNode &s, int value)
 {
+    if (MAXSIZE == s.top)
+    {
+        cout << "FULL STACK !!!" << endl;
+        exit(0);
+    }
     s.node[s.top] = value;
     s.top++;
 }
